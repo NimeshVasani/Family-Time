@@ -40,7 +40,7 @@ This App uses [Firebase](https://firebase.google.com) for storing and retrieving
     Storing the images, videos, and files shared by users.
 
 # MVVM Set up
-  Four types of repositories([Auth Repository](app/src/main/java/com/example/familytime/repositories/auth/AuthRepository.kt),[Chat Repository](app/src/main/java/com/example/familytime/repositories/chats/ChatsRepository.kt),[FireStore Respository](app/src/main/java/com/example/familytime/repositories/firestore/FireStoreRepository.kt),[Storage Repository](app/src/main/java/com/example/familytime/repositories/storage/StorageRepository.kt)), and  
+  Four types of repositories([Auth Repository](app/src/main/java/com/example/familytime/repositories/auth/AuthRepository.kt), [Chat Repository](app/src/main/java/com/example/familytime/repositories/chats/ChatsRepository.kt), [FireStore Respository](app/src/main/java/com/example/familytime/repositories/firestore/FireStoreRepository.kt), [Storage Repository](app/src/main/java/com/example/familytime/repositories/storage/StorageRepository.kt)), and  
   Four equivalent Viewmodels classes().
   
     
