@@ -45,5 +45,8 @@ This App uses [Firebase](https://firebase.google.com) for storing and retrieving
   Four types of repositories([Auth Repository](app/src/main/java/com/example/familytime/repositories/auth/AuthRepository.kt), [Chat Repository](app/src/main/java/com/example/familytime/repositories/chats/ChatsRepository.kt), [FireStore Respository](app/src/main/java/com/example/familytime/repositories/firestore/FireStoreRepository.kt), [Storage Repository](app/src/main/java/com/example/familytime/repositories/storage/StorageRepository.kt)), and  
   Four equivalent Viewmodels classes([Auth Viewmodel](app/src/main/java/com/example/familytime/viewmodels/auth/AuthViewModel.kt), [Chat ViewModel](app/src/main/java/com/example/familytime/viewmodels/chats/ChatsViewModel.kt), [FireStore ViewModel](app/src/main/java/com/example/familytime/viewmodels/firestore/FireStoreViewModel.kt), [Storage ViewModel](app/src/main/java/com/example/familytime/viewmodels/storage/StorageViewModel.kt)).
   
-    
+# Adapters for RecyclerViews 
+
+All [Adapters](app/src/main/java/com/example/familytime/adapters) built with diffUtil, so we can submit data as it load by viewModel Observers.
+
     
