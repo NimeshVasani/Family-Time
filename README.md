@@ -26,3 +26,14 @@ To Update the [google map Api](https://console.cloud.google.com) key in a projec
 # Architecture & Work-Flow
 
 This App uses [Firebase](https://firebase.google.com) for storing and retrieving data. 
+### [Realtime Database](https://firebase.google.com/docs/database)
+    Saving Chats and live location.
+### [Firestore](https://firebase.google.com/docs/firestore) 
+    Storing Users, Posts, and Families/Groups' information.
+### [Firebase Authentication](https://firebase.google.com/docs/auth) 
+    Authenticate the users with email, and/or phone.
+### [Cloud Storage](https://firebase.google.com/docs/storage) 
+    Storing the images, videos, and files shared by users.
+    
+    
+    
