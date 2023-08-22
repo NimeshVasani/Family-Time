@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Family Time</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_maps">Map</string>
+    <string name="title_status">Status</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_all_families">Families</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">You are not part of any family</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

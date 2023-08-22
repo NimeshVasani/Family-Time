@@ -1,0 +1,10 @@
+<!-- bg_bottom_nav_indicator.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This shape will be the indicator background -->
+    <item android:id="@+id/backgroundShape">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/orange" />
+        </shape>
+    </item>
+    <!-- Add any other elements you want in the indicator, like icons, etc. -->
+</layer-list>

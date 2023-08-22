@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black_off">#292c2f</color>
+    <color name="blue">#0000FF</color>
+    <color name="toolbar">#f9f9f9</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="orange">#FFA500</color>
+    <color name="custom_grey">#DEDEDE</color>
+    <color name="red">#EE4B2B</color>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.familytime.ui.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_mainFragment_to_chatsGraph"
+            app:destination="@id/chats_graph" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_profile_set_up_graph"
+            app:destination="@id/profile_set_up_graph"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.familytime.ui.MapsFragment"
+        android:label="@string/title_maps"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.familytime.ui.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_profile_set_up_graph"
+            app:destination="@id/profile_set_up_graph"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_all_families"
+        android:name="com.example.familytime.ui.AllFamiliesFragment"
+        android:label="@string/title_all_families"
+        tools:layout="@layout/fragment_all_families" />
+    <navigation
+        android:id="@+id/chats_graph"
+        app:startDestination="@id/navigation_chats">
+
+        <fragment
+            android:id="@+id/navigation_chats"
+            android:name="com.example.familytime.ui.ChatsFragment"
+
+            tools:layout="@layout/fragment_chats" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/profile_set_up_graph"
+        app:startDestination="@id/navigation_profile_set_up">
+
+        <fragment
+            android:id="@+id/navigation_profile_set_up"
+            android:name="com.example.familytime.ui.UserProfileFragment"
+
+            tools:layout="@layout/fragment_user_profile" />
+    </navigation>
+
+</navigation>

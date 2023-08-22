@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_chat"
+        android:iconTint="@color/white"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_all_families"
+        android:icon="@drawable/ic_families"
+        android:iconTint="@color/white"
+        android:iconTintMode="add"
+        android:title="@string/title_all_families" />
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_location"
+        android:iconTint="@color/white"
+        android:title="@string/title_maps" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_setting"
+        android:iconTint="@color/white"
+        android:iconTintMode="add"
+        android:title="@string/title_setting" />
+
+</menu>

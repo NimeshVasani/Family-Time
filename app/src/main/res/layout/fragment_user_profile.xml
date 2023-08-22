@@ -1,0 +1,300 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edit_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Cancel"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/profile_set_up_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_back_foreground" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edit_done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="Done"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_set_up_img_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_user_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:shapeAppearance="@style/CircularShapeAppearanceOverlay" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/edit_profile_user_pic_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#DEDEDE"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="@id/profile_set_up_img_view"
+        app:layout_constraintEnd_toEndOf="@id/profile_set_up_img_view"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small"
+        app:srcCompat="@drawable/ic_edit_foreground" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="Enter your name and add an optional profile picture"
+        app:layout_constraintBottom_toBottomOf="@id/profile_set_up_img_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toTopOf="@id/profile_set_up_img_view" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_set_up_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Edit"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/profile_set_up_img_view"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_set_up_img_view" />
+
+    <View
+        android:id="@+id/profile_line1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/custom_grey"
+        android:backgroundTint="#DEDEDE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_set_up_edit" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/profile_set_up_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Your Name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/profile_line1"
+        app:layout_constraintStart_toStartOf="@id/profile_line1"
+        app:layout_constraintTop_toBottomOf="@id/profile_line1" />
+
+    <View
+        android:id="@+id/profile_line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/custom_grey"
+        android:backgroundTint="#DEDEDE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_set_up_name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_profile_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="PHONE NUMBER"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/profile_line2" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_profile_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="+1(123)345-6789"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_phone" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_profile_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ABOUT"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/profile_set_up_img_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_phone_num" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/family_requests_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="Families Request"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_about"
+        app:shapeAppearanceOverlay="@style/pill_shape"
+        app:strokeColor="@color/custom_grey"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/user_request__btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="User Requests"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/family_requests_btn"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_about"
+        app:shapeAppearanceOverlay="@style/pill_shape"
+        app:strokeColor="@color/custom_grey"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="100dp"
+        android:text="There is no pending Request"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_request__btn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_pending_requests"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_request__btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_profile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/black"
+        android:elevation="20dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/CutCornerButton" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/skip_profile_set_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="20dp"
+        android:text="Skip for Now"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/save_profile_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/CircularShapeAppearanceOverlay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

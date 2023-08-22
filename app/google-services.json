@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688701518470",
+    "project_id": "family-time-ef015",
+    "storage_bucket": "family-time-ef015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688701518470:android:560ae8284abdaf031b1707",
+        "android_client_info": {
+          "package_name": "com.example.familytime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688701518470-hkqjktcdg78nm6gsfcu8gi2dh7j1fdf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdAVyaIaPg5ppopQdl8ssooWXIkITKKdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688701518470-hkqjktcdg78nm6gsfcu8gi2dh7j1fdf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

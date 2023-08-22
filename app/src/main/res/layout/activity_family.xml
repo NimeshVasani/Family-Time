@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamilyActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:elevation="10dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/family_back_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_back_foreground" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/family_name_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Family Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <ImageButton
+                    android:id="@+id/family_name_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:foregroundTint="@color/blue"
+                    android:paddingBottom="11dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_edit_foreground" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_family_cover"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/family_main_screen_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_family_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#DEDEDE"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@id/img_family_cover"
+                app:layout_constraintEnd_toEndOf="@id/img_family_cover"
+                app:shapeAppearanceOverlay="@style/CircularShapeAppearanceOverlay"
+                app:srcCompat="@drawable/ic_camera_foreground" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/circular_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_user_family"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircularShapeAppearanceOverlay" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#DEDEDE"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@id/img_user_family"
+                app:layout_constraintEnd_toEndOf="@id/img_user_family"
+                app:shapeAppearanceOverlay="@style/CircularShapeAppearanceOverlay"
+                app:srcCompat="@drawable/ic_camera_foreground" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/family_title_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Family Name"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_user_family" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/family_add_to_story_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black_off"
+                android:paddingStart="2dp"
+                android:paddingEnd="10dp"
+                android:text="Add to Story"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_add_foreground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/family_title_main"
+                app:shapeAppearanceOverlay="@style/CutCornerButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/family_edit_profile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#DEDEDE"
+                android:paddingStart="2dp"
+                android:paddingEnd="10dp"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_edit_foreground"
+                app:iconTint="@color/black"
+                app:layout_constraintStart_toEndOf="@id/family_add_to_story_btn"
+                app:layout_constraintTop_toTopOf="@id/family_add_to_story_btn"
+                app:shapeAppearanceOverlay="@style/CutCornerButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:padding="2dp"
+                app:backgroundTint="#DEDEDE"
+                app:icon="@drawable/ic_more"
+                app:iconGravity="textEnd"
+                app:iconSize="40dp"
+                app:iconTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/family_add_to_story_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/family_edit_profile_btn"
+                app:layout_constraintTop_toTopOf="@id/family_add_to_story_btn"
+                app:shapeAppearanceOverlay="@style/CutCornerButton"
+                app:tintMode="multiply" />
+
+            <View
+                android:id="@+id/family_section_divider1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DEDEDE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/family_add_to_story_btn" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_details_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/family_section_divider1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_family_location"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/ic_home_foreground"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Lives in Toronto, Ontario"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_details_heading" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_family_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                app:iconGravity="textStart"
+                android:gravity="start|top"
+                android:drawableStart="@drawable/ic_people_foreground"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="about your family"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_family_location" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_family_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/ic_more"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="5"
+                android:text="see more about info"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_family_details"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <View
+                android:id="@+id/family_section_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="#DEDEDE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_family_about" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_members_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Members"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/family_section_divider2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_members_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="20 members"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_add_members" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_add_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Add Members"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_members_heading"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_family_members"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_members_count" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/see_all_members_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="See all members"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:backgroundTint="#DEDEDE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_family_members"
+                app:shapeAppearanceOverlay="@style/CutCornerButton" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_your_posts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Your photos and videos"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/see_all_members_btn" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_your_posts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_your_posts_title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_all_posts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="All posts"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_your_posts" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_all_posts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_all_posts_title" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

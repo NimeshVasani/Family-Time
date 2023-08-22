@@ -1,0 +1,8 @@
+<!-- bg_pill_rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <corners android:radius="20dp" />
+    <stroke
+        android:width="5dp"
+        android:color="@color/custom_grey" />
+</shape>
