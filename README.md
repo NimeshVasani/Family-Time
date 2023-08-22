@@ -49,4 +49,8 @@ This App uses [Firebase](https://firebase.google.com) for storing and retrieving
 
 All [Adapters](app/src/main/java/com/example/familytime/adapters) built with diffUtil, so we can submit data as it load by viewModel Observers.
 
-    
+
+# Thank You for Your Interest!! Enjoy. 
+
+Dm for inquiries/Collaboration [Nimesh Vasani](https://www.linkedin.com/in/nimesh-vasani-99b642154)
+
