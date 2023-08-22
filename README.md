@@ -26,7 +26,7 @@ To Update the [google map Api](https://console.cloud.google.com) key in a projec
 # Architecture & Work-Flow
 
 The app uses MVVM architecture and Dagger Hilt.
-![alt text](https://github.com/NimeshVasani/family-time/blob/main/snapshots/mvvm_firebase.png)
+![alt text](https://github.com/NimeshVasani/Family-Time/blob/890ce652ceaa2f2a87a0b8b5ea9d8f9b4be18a06/snaposhots/mvvm_firebase.png)
 
 This App uses [Firebase](https://firebase.google.com) for storing and retrieving data. 
 ### [Realtime Database](https://firebase.google.com/docs/database)
