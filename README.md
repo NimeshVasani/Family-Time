@@ -15,10 +15,14 @@ The family Time app also provides the live locations of various families you hav
 You can also have group conversations.
 Users can create families add members and many more.
 
-To Update the google map Api key in a project to make it work follow the step: goto `"manifest" and update "metadata for google map API"`
+To Update the [google map Api](https://console.cloud.google.com) key in a project to make it work follow the step: goto `"manifest" and update "metadata for google map API"`
 
 ```xml
  <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 ```
+
+# Architecture & Work-Flow
+
+This App uses [Firebase](https://firebase.google.com) for storing and retrieving data. 
