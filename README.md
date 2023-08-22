@@ -11,8 +11,13 @@ All copyright reserved @Nimesh Vasani
 # About The App
 
 Save and Share Your beautiful memories with your friends and family. 
-Family Time app also provide live location of various families you have joined. 
+The family Time app also provides the live locations of various families you have joined. 
 You can also have group conversations.
-User can create families add members and many more.
+Users can create families add members and many more.
 
-To Update the google map Api key in a project to make it work follow the step: goto `"manifest" and update "meta data for google map api"`
+To Update the google map Api key in a project to make it work follow the step: goto `"manifest" and update "metadata for google map API"`
+```
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+```
