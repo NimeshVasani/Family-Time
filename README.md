@@ -38,6 +38,10 @@ This App uses [Firebase](https://firebase.google.com) for storing and retrieving
     Authenticate the users with email, and/or phone.
 ### [Cloud Storage](https://firebase.google.com/docs/storage) 
     Storing the images, videos, and files shared by users.
-    
+
+# MVVM Set up
+  Four types of repositories([Chat Repository](app/src/main/java/com/example/familytime/repositories/chats/ChatsRepository.kt)). 
+  Four equivalent Viewmodels classes().
+  
     
     
